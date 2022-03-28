@@ -1,7 +1,7 @@
 {% extends 'portfolio/base.html' %}
 {% block content %}
 <div class="container text-center">
-<h1>Портфолио</h1>
+<h1>Portfolio</h1>
 
 {% load static %}
      
@@ -16,7 +16,7 @@
         <h5 class="card-title">{{ project.title }}</h5>
         <p class="card-text">{{ project.description }}</p>
         {% if project.url %}
-        <a href="{{ project.url }}" class="btn btn-primary" target="_blank">Go somewhere</a>
+        <a href="{{ project.url }}" class="btn btn-primary" target="_blank">Go to GitHub</a>
         {% endif %}
         </div>
     </div>
