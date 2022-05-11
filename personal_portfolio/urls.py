@@ -25,6 +25,8 @@ urlpatterns = [
     path ('', views.home, name='home'),
     path('blog/', include('blog.urls')),
     path('about/', views.about, name="about"),
+    path('password_generator/', views.password_generator, name='password_generator'),
+    path('your_password/', views.your_password, name='your_password')
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
